@@ -87,7 +87,7 @@ header .banner div p {
 
 /* products section */
 main .products {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .products .products-heading {
   text-align: center;
@@ -134,12 +134,45 @@ main .products {
   border: none;
 }
 
+/* plants-lover section */
+.plants-lover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.plants-lover div {
+  max-width: 540px;
+}
+.plants-lover div h3 {
+  margin-left: -30px;
+  font-size: 3rem;
+  font-weight: 700px;
+}
+
+.plants-lover div ul li {
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+
+.plants-lover .badge {
+  width: 290px;
+  height: 290px;
+  position: absolute;
+  margin-left: -160px;
+  margin-top: -110px;
+}
+
 @media screen and (max-width: 667px) {
   body {
     max-width: 360px;
   }
   header nav {
     margin-top: 10px;
+  }
+  header nav img {
+    width: 65px;
+    height: 40px;
   }
 
   nav ul .home,
@@ -194,5 +227,28 @@ main .products {
   }
   .products .products-container .product .product-description h4 {
     font-size: 1rem;
+  }
+
+  /* plants-lover section */
+  .plants-lover {
+    flex-direction: column;
+    margin-top: -80px;
+  }
+  .plants-lover div .badge {
+    display: none;
+  }
+  .plants-lover div img {
+    width: 100%;
+  }
+  .plants-lover .plants-lover-description {
+    width: 310px;
+    margin-top: 10px;
+  }
+  .plants-lover .plants-lover-description h3 {
+    margin-left: -20px;
+    font-size: 1.5rem;
+  }
+  .plants-lover .plants-lover-description ul li {
+    font-size: 0.8rem;
   }
 }

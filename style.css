@@ -3,12 +3,6 @@
   padding: 0px;
 }
 
-body {
-  max-width: 1200px;
-  margin: 0px auto;
-  border: 1px solid black;
-}
-
 /* shared style */
 
 .font-1 {
@@ -38,6 +32,8 @@ body {
 
 /* header style */
 header {
+  max-width: 1200px;
+  margin: 0px auto;
   margin-bottom: 100px;
 }
 
@@ -87,6 +83,8 @@ header .banner div p {
 
 /* products section */
 main .products {
+  max-width: 1200px;
+  margin: 0px auto;
   margin-bottom: 150px;
 }
 .products .products-heading {
@@ -136,6 +134,8 @@ main .products {
 
 /* plants-lover section */
 .plants-lover {
+  max-width: 1200px;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -164,6 +164,10 @@ main .products {
 }
 
 /* latest deals section style */
+.latest-deals {
+  max-width: 1200px;
+  margin: 0px auto;
+}
 
 .latest-deals .images .img-1 {
   width: 370px;
@@ -264,9 +268,75 @@ main .products {
     "img-2 img-3";
 }
 
+.contact {
+  width: 100%;
+  height: 540px;
+  background-image: url("assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+}
+
+.contact .contact-container h3 {
+  font-size: 3rem;
+  font-weight: 700px;
+  color: white;
+  margin-bottom: 15px;
+}
+.contact .contact-container div input {
+  padding: 8px 25px;
+  width: 600px;
+}
+.contact .contact-container div button {
+  padding: 8.8px 50px;
+  color: white;
+  border: none;
+  margin-left: -6px;
+  background-color: #e95a08;
+}
+
+/* about section style */
+.footer {
+  height: 350px;
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .links ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  column-gap: 60px;
+}
+.footer .about-logo {
+  width: 360px;
+}
+.footer .about-logo p {
+  margin-top: 10px;
+}
+.footer .links ul li {
+  list-style: none;
+}
+.footer .links ul li a {
+  text-decoration: none;
+  color: #8987a1;
+}
+
+.footer .logo img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 667px) {
   body {
-    max-width: 360px;
+    width: 360px;
+    margin: 0px auto;
   }
   header nav {
     margin-top: 10px;
@@ -276,9 +346,13 @@ main .products {
     height: 40px;
   }
 
-  nav ul .home,
-  .shop,
-  .about {
+  nav ul .home {
+    display: none;
+  }
+  nav ul .shop {
+    display: none;
+  }
+  nav ul .about {
     display: none;
   }
   nav ul li {
@@ -361,18 +435,55 @@ main .products {
       "img-3";
   }
   .latest-deals .images .img-1 {
-    width: 360px;
+    width: 100%;
   }
   .latest-deals .images .img-2 {
-    width: 360px;
+    width: 100%;
   }
   .latest-deals .images .img-3 {
-    width: 360px;
+    width: 100%;
   }
   .latest-deals .images .img-3 p {
     font-size: 1.2rem;
   }
   .latest-deals .images .img-3 div a {
     font-size: 1rem;
+  }
+
+  /* contact section style */
+  .contact {
+    height: 300px;
+    margin-top: -80px;
+  }
+
+  .contact .contact-container div input {
+    width: 220px;
+    margin-bottom: 10px;
+  }
+  .contact .contact-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  /* footer secion style */
+  .footer {
+    margin-top: 40px;
+    width: calc(100% - 40px);
+    height: 600px;
+    flex-direction: column;
+    margin-bottom: 100px;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+  .footer .about-logo {
+    text-align: left;
+  }
+  .footer .links ul {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0px;
+    margin-bottom: 10px;
+  }
+  .footer .logo img {
+    margin-left: 0px;
   }
 }

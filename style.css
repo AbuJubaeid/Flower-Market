@@ -83,6 +83,57 @@ header .banner div p {
   margin-top: 10px;
 }
 
+/* main section style */
+
+/* products section */
+main .products {
+  margin-bottom: 150px;
+}
+.products .products-heading {
+  text-align: center;
+}
+.products .products-heading h3 {
+  font-size: 3rem;
+  font-weight: 700px;
+}
+.products .products-heading p {
+  max-width: 890px;
+  font-size: 1.4rem;
+  margin: 0px auto;
+}
+
+.products .products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.products .products-container .product {
+  max-width: 270px;
+}
+.products .products-container .product .product-description {
+  text-align: center;
+  line-height: 2.4rem;
+}
+.products .products-container .product .product-description p {
+  font-size: 1.4rem;
+  font-weight: 600px;
+}
+.products .products-container .product .product-description h4 {
+  font-size: 1.4rem;
+  font-weight: 700px;
+}
+.products .products-container .product .product-description button {
+  width: 100%;
+  padding: 15px 0px;
+  background-color: #e95a08;
+  font-size: 1rem;
+  font-weight: 400px;
+  cursor: pointer;
+  border: none;
+}
+
 @media screen and (max-width: 667px) {
   body {
     max-width: 360px;
@@ -120,5 +171,31 @@ header .banner div p {
   }
   header .banner img {
     width: 100%;
+  }
+  /* products section */
+  .products {
+    margin-top: -50px;
+  }
+  .products .products-heading h3 {
+    font-size: 1.5rem;
+  }
+  .products .products-heading p {
+    max-width: 340px;
+    font-size: 0.8rem;
+  }
+  .products .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products .products-container .product {
+    max-width: 170px;
+  }
+  .products .products-container .product img {
+    width: 100%;
+  }
+  .products .products-container .product .product-description p {
+    font-size: 1rem;
+  }
+  .products .products-container .product .product-description h4 {
+    font-size: 1rem;
   }
 }

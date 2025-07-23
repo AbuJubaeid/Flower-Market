@@ -457,8 +457,12 @@ main .products {
   }
 
   .contact .contact-container div input {
-    width: 220px;
-    margin-bottom: 10px;
+    width: 150px;
+    /* margin-bottom: 10px; */
+  }
+  .contact .contact-container div button {
+    width: 100px;
+    padding: 8.8px 20px;
   }
   .contact .contact-container h3 {
     font-size: 1.2rem;

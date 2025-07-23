@@ -32,6 +32,10 @@ body {
   color: #8987a1;
 }
 
+.color-3 {
+  color: #e95a08;
+}
+
 /* header style */
 
 header nav {
@@ -40,7 +44,6 @@ header nav {
   align-items: center;
   height: 75px;
   margin-top: 40px;
-  border: 2px solid red;
 }
 
 nav ul {
@@ -59,6 +62,23 @@ nav ul li a {
   color: #252432;
   font-size: 1rem;
 }
+header .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 100px;
+}
+header .banner div {
+  width: 570px;
+}
+header .banner div h1 {
+  font-size: 4rem;
+  font-weight: 700px;
+}
+header .banner div p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
 
 @media screen and (max-width: 667px) {
   body {
@@ -75,5 +95,23 @@ nav ul li a {
   }
   nav ul li {
     margin-left: 0px;
+  }
+
+  header .banner {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+  header .banner div {
+    width: 100%;
+    margin-top: 15px;
+  }
+  header .banner div h1 {
+    font-size: 1.5rem;
+  }
+  header .banner div p {
+    font-size: 0.8rem;
+  }
+  header .banner img {
+    width: 100%;
   }
 }

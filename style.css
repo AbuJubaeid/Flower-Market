@@ -2,3 +2,78 @@
   margin: 0px;
   padding: 0px;
 }
+
+body {
+  max-width: 1200px;
+  margin: 0px auto;
+  border: 1px solid black;
+}
+
+/* shared style */
+
+.font-1 {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.color-1 {
+  color: #252432;
+}
+
+.color-2 {
+  color: #8987a1;
+}
+
+/* header style */
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  margin-top: 40px;
+  border: 2px solid red;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+nav ul .cart {
+  margin-left: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #252432;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 667px) {
+  body {
+    max-width: 360px;
+  }
+  header nav {
+    margin-top: 10px;
+  }
+
+  nav ul .home,
+  .shop,
+  .about {
+    display: none;
+  }
+  nav ul li {
+    margin-left: 0px;
+  }
+}
